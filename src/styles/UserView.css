@@ -1,0 +1,23 @@
+/* Home.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Hace que el contenedor ocupe toda la pantalla */
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgb(2, 0, 29);
+  }
+  
+  .title {
+    font-size: 4rem; /* Tamaño grande para ocupar casi toda la página */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem; /* Tamaño más pequeño */
+    opacity: 0.8;
+  }
+  

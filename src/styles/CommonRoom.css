@@ -1,0 +1,23 @@
+/* commonRoom.css */
+.commonRoom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Hace que el contenedor ocupe toda la pantalla */
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: #00013a;
+  }
+  
+  .commonRoom-title {
+    font-size: 2rem; /* Tamaño grande para ocupar casi toda la página */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .commonRoom-subtitle {
+    font-size: 1.2rem; /* Tamaño más pequeño */
+    opacity: 0.8;
+  }
+  

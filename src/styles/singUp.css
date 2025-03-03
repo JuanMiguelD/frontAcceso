@@ -1,0 +1,60 @@
+/* Contenedor principal centrado */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #125e74;
+    
+  }
+  
+  /* Tarjeta de registro */
+  .register-box {
+    background-color: rgb(2, 0, 29);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(202, 132, 132, 0.2);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Título */
+  .register-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Estilos generales para los inputs */
+  .register-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el botón */
+  .register-button {
+    width: 100%;
+    background-color: #007bff;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .register-button:hover {
+    background-color: #a00202;
+  }
+  
+  /* Mensaje de error */
+  .register-error {
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
