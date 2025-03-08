@@ -35,13 +35,16 @@ function CommonRoom() {
 
 
   return (
-    <div className="commonRoom-container">
+    <div>
       <NavBarUser/>
-      <h1 className="commonRoom-title">Bienvenidos a la Sala Comun</h1>
-      <p className="commonRoom-subtitle">
-        A continuacion podran encontrar un espacio de recomendaciones de las opciones y preferencias que podran realizar dentro de esta App, espero que difruten de su estadia.
-      </p>
+        <div className="commonRoom-container">
+        <h1 className="commonRoom-title">Bienvenidos a la Sala Comun</h1>
+        <p className="commonRoom-subtitle">
+          A continuacion podran encontrar un espacio de recomendaciones de las opciones y preferencias que podran realizar dentro de esta App, espero que difruten de su estadia.
+        </p>
+      </div>
     </div>
+    
   );
 }
 

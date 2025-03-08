@@ -20,4 +20,10 @@
     font-size: 1.2rem; /* Tamaño más pequeño */
     opacity: 0.8;
   }
+  .title {
+    font-size: 4rem; /* Tamaño grande para ocupar casi toda la página */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
   
