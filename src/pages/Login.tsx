@@ -4,6 +4,7 @@ import { useAuth } from '../auth/AuthProvider';
 import NavBarHome from "../component/NavBarHome";
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import "../styles/singUp.css"
 
 
 const Login = () => {

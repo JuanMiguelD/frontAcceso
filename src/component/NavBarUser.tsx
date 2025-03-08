@@ -2,6 +2,7 @@
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../auth/AuthProvider";
 import React from "react";
+import "../styles/navBarUser.css"
 
 const NavBarUser = () => {
   const { setIsAuthenticated, setUserType, userType } = useAuth();
@@ -25,31 +26,30 @@ const NavBarUser = () => {
   };
 
   return (
-    <nav className="bg-white shadow-lg">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between h-16 items-center">
-          {/* Opciones de navegación */}
-          <div className="flex space-x-6">
-            <button onClick={() => handleNavigate("/adm")} className="text-gray-700 hover:text-blue-600 text-sm font-medium">
+    <nav className="navbar-container">
+      <div className="navbar-content">
+        <div className="navbar-options">
+          {userType === "ADM" && (
+            <button onClick={() => handleNavigate("/adm")} className="navbar-button">
               Área Admin
             </button>
-            <button onClick={() => handleNavigate("/reader")} className="text-gray-700 hover:text-blue-600 text-sm font-medium">
+          )}
+          {userType === "READER" && (
+            <button onClick={() => handleNavigate("/reader")} className="navbar-button">
               Área Reader
             </button>
-            <button onClick={() => navigate("/sala-comun")} className="text-gray-700 hover:text-blue-600 text-sm font-medium">
-              Sala Común
-            </button>
-          </div>
-
-          {/* Sección de usuario y logout */}
-          <div className="flex items-center space-x-4">
-            <span className="text-gray-600 text-sm font-medium">
-              {userType === "ADM" ? "Administrador" : "Lector"}
-            </span>
-            <button onClick={handleLogout} className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md text-sm font-medium">
-              Cerrar Sesión
-            </button>
-          </div>
+          )}
+          <button onClick={() => navigate("/sala-comun")} className="navbar-button">
+            Sala Común
+          </button>
+        </div>
+        <div className="user-section">
+          <span className="user-type">
+            {userType === "ADM" ? "Administrador" : "Lector"}
+          </span>
+          <button onClick={handleLogout} className="logout-button">
+            Cerrar Sesión
+          </button>
         </div>
       </div>
     </nav>
